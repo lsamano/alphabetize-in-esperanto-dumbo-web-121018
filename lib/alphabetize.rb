@@ -1,3 +1,6 @@
 def alphabetize(arr)
-  # code here
+  arr.sort_by do |word|
+  word.chars.map do |letter|
+    CRAZY_ALPHABET.index(letter)
+  end
 end
